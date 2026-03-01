@@ -1,0 +1,11 @@
+.o-container {
+  width: 100%;
+  max-width: 1200px; // The maximum width of your site
+  margin-inline: auto; // Centers the container horizontally
+  padding-inline: 1rem; // Prevents text from touching the screen edges on mobile
+}
+
+// A narrower version for reading articles/blogs
+.o-container--narrow {
+  max-width: 800px;
+}

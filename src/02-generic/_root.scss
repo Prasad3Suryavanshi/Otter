@@ -1,0 +1,16 @@
+:root {
+  // Exposing a few core variables to the DOM for easy access
+  --otter-bg: hsl(0 0% 100%);      // white
+  --otter-text: hsl(210 20% 10%);  // slate-900
+}
+
+html {
+  font-size: 100%; // Standard 16px base
+}
+
+body {
+  background-color: var(--otter-bg);
+  color: var(--otter-text);
+  // Uses the system sans-serif stack defined in your tokens
+  font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+}

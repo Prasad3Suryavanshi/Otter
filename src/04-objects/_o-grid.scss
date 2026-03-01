@@ -1,0 +1,6 @@
+.o-grid {
+  display: grid;
+  gap: 1.5rem;
+  // This is the magic line for an auto-responsive grid:
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+}

@@ -1,0 +1,18 @@
+.u-hide { 
+  display: none !important; 
+}
+
+.u-show-flex { 
+  display: flex !important; 
+}
+
+.u-show-block { 
+  display: block !important; 
+}
+
+// Hide elements specifically on mobile screens
+@media (max-width: 48em) {
+  .u-hide-mobile { 
+    display: none !important; 
+  }
+}

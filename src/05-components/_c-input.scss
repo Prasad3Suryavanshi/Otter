@@ -1,0 +1,20 @@
+.c-input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid hsl(210 20% 96%); // light slate border
+  color: inherit;
+  transition: border-color 0.2s ease;
+
+  // The animated bottom border on focus
+  &:focus {
+    outline: none;
+    border-bottom-color: hsl(210 100% 50%); // highlights blue
+  }
+
+  &::placeholder {
+    color: hsl(210 15% 50%);
+  }
+}

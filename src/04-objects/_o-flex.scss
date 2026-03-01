@@ -1,0 +1,16 @@
+.o-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+// Modifiers for common alignments
+.o-flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.o-flex--between {
+  align-items: center;
+  justify-content: space-between;
+}

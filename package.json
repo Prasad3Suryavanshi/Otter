@@ -1,0 +1,21 @@
+{
+  "name": "otter-framework",
+  "version": "1.0.0",
+  "description": "Minimalist CSS Framework",
+  "main": "dist/css/otter.css",
+  "scripts": {
+    "build:sass": "sass src/otter.scss dist/css/otter.css --no-source-map",
+    "build:postcss": "postcss dist/css/otter.css -o dist/css/otter.min.css -u postcss-preset-env cssnano",
+    "build": "npm run build:sass && npm run build:postcss",
+    "watch": "sass --watch src/otter.scss dist/css/otter.css"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-preset-env": "^9.0.0",
+    "sass": "^1.70.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard-scss": "^13.0.0"
+  }
+}

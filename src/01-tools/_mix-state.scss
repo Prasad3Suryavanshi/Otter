@@ -1,0 +1,7 @@
+// Hover, focus, and active state handler for interactive elements
+@mixin interact {
+  &:hover,
+  &:focus-visible {
+    @content;
+  }
+}

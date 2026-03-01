@@ -1,0 +1,6 @@
+// Fluid typography using clamp
+@mixin fluid-type($min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
+  $min-rem: rem($min-size);
+  $max-rem: rem($max-size);
+  font-size: clamp(#{$min-rem}, 2vw + 1rem, #{$max-rem});
+}

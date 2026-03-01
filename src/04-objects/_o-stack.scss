@@ -1,0 +1,15 @@
+.o-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+// The "Owl Selector": applies margin to the top of every child element EXCEPT the first one
+.o-stack > * + * {
+  margin-top: var(--stack-space, 1.5rem);
+}
+
+// Modifier for tighter spacing
+.o-stack--tight > * + * {
+  margin-top: 0.5rem;
+}
